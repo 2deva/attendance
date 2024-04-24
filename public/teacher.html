@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title">Attendance System</title>
+    <link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+    <h1>Attendance</h1>
+
+    <div id="studentList">
+        <label for="studentName" style="color: black;">Student Name:</label>
+        <input type="text" id="studentName" placeholder="Enter student name">
+        <button  onclick="addStudent()" class="btn">Add Student</button>
+    </div>
+
+    <div id="attendanceTableContainer">
+        <h2>Attendance Table</h2>
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Present</th>
+                    <th>Absent</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="attendanceBody"></tbody>
+        </table>
+    </div>
+    
+   <script src="teacher.js"></script>
+</body>
+</html>
+
